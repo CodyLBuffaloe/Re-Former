@@ -3,6 +3,7 @@
 <head></head>
 <body>
 <form action="/users" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="name"> Username:</label> <input type="text" name="name">
   <label for="email"> E-mail:</label> <input type="text" name="email">
   <label for="password">Password:</label> <input type="password" name="password">
