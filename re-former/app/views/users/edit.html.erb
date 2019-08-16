@@ -3,7 +3,7 @@
 <head></head>
 <body>
 <form action="/users" accept-charset="UTF-8" method="post">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="authenticity_token" value="<%#<%= form_authenticity_token %>">
   <label for="name"> Username:</label> <input type="text" name="user[name]">
   <label for="email"> E-mail:</label> <input type="text" name="user[email]">
   <label for="password">Password:</label> <input type="password" name="user[password]">
@@ -27,5 +27,5 @@
   <%= f.text_field :email, placeholder: "test@example.com" %><br/>
   <%= label(:password, text="Your Password:")%>
   <%= f.password_field :password, placeholder: "password" %><br/>
-  <%= f.submit "Create User" %>
+  <%= f.submit "Edit User" %>
 <% end %>
